@@ -1,5 +1,7 @@
 1. INTRODUCTION
 
+   介绍
+
 Wine is a program which allows running Microsoft Windows programs
 (including DOS, Windows 3.x, Win32, and Win64 executables) on Unix.
 It consists of a program loader which loads and executes a Microsoft
@@ -36,6 +38,8 @@ especially the wealth of information found at https://www.winehq.org.
 
 To compile and run Wine, you must have one of the following:
 
+要编译和运行 Wine，您必须具备以下条件之一： （这个地方，我们只需要linux内核版本大于2.0.36就行，一般都是大于的）
+
   Linux version 2.0.36 or later
   FreeBSD 8.0 or later
   Solaris x86 9 or later
@@ -45,6 +49,9 @@ To compile and run Wine, you must have one of the following:
 As Wine requires kernel-level thread support to run, only the operating
 systems mentioned above are supported.  Other operating systems which
 support kernel threads may be supported in the future.
+
+由于 Wine 需要内核级线程支持才能运行，因此只有运行支持上述系统。 其他操作系统
+支持内核线程，以后可能会支持。
 
 FreeBSD info:
   Wine will generally not work properly on versions before FreeBSD 8.0.
@@ -80,6 +87,8 @@ Basic requirements:
   Of course you also need "make" (most likely GNU make).
 
   You also need flex version 2.5.33 or later and bison.
+
+我们需要比2.5.33高的make版本
 
 Optional support libraries:
   Configure will display notices when optional libraries are not found
@@ -129,45 +138,13 @@ For example: to run Notepad:
 
     wine notepad            (using the search Path as specified in
     wine notepad.exe         the registry to locate the file)
-
+    
     wine c:\\windows\\notepad.exe      (using DOS filename syntax)
-
+    
     wine ~/.wine/drive_c/windows/notepad.exe  (using Unix filename syntax)
-
+    
     wine notepad.exe readme.txt          (calling program with parameters)
 
 Wine is not perfect, so some programs may crash. If that happens you
 will get a crash log that you should attach to your report when filing
 a bug.
-
-
-7. GETTING MORE INFORMATION
-
-WWW:	A great deal of information about Wine is available from WineHQ at
-	https://www.winehq.org/ : various Wine Guides, application database,
-	bug tracking. This is probably the best starting point.
-
-FAQ:	The Wine FAQ is located at https://www.winehq.org/FAQ
-
-Wiki:	The Wine Wiki is located at https://wiki.winehq.org
-
-Mailing lists:
-	There are several mailing lists for Wine users and developers;
-	see https://www.winehq.org/forums for more information.
-
-Bugs:	Report bugs to Wine Bugzilla at https://bugs.winehq.org
-	Please search the bugzilla database to check whether your
-	problem is already known or fixed before posting a bug report.
-
-IRC:	Online help is available at channel #WineHQ on irc.libera.chat.
-
-Git:	The current Wine development tree is available through Git.
-	Go to https://www.winehq.org/git for more information.
-
-If you add something, or fix a bug, please send a patch (preferably
-using git-format-patch) to the wine-devel@winehq.org list for
-inclusion in the next release.
-
---
-Alexandre Julliard
-julliard@winehq.org

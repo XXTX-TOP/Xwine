@@ -17523,13 +17523,13 @@ msgid ""
 "Free Software Foundation; either version 2.1 of the License, or (at your "
 "option) any later version."
 msgstr ""
-"本程序为自由软件，您可以遵照自由软件基金会出版的 GNU 较宽松通用公共许可证协议"
-"（LGPL）来对其进行添加、修改和重新发布。许可协议版本为2.1，您也可以选择采用更"
-"新的版本。"
+"本程序是为了在Linux上运行windows软件而设计，基于Wine二次开发，遵循LGPL2.1协议"
+"具体的使用说明，看之后的更新吧"
+"暂且叫他XWine"
 
 #: programs/winecfg/winecfg.rc:142
 msgid "Windows registration information"
-msgstr "Windows 注册信息"
+msgstr "Windows 注册信息（这个东西可以不用填）"
 
 #: programs/winecfg/winecfg.rc:143
 msgid "&Owner:"
