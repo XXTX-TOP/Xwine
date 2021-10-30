@@ -17607,7 +17607,7 @@ msgid ""
 "application)."
 msgstr ""
 "对各个动态链接库，可以选择使用 Wine 提供的内建版本，还是使用取自 Windows 或程"
-"序所提供的原装版本。"
+"序所提供的原装版本。建议把riched20/riched32设置成（原装先于内建）"
 
 #: programs/winecfg/winecfg.rc:193
 msgid "&New override for library:"
